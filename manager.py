@@ -1,7 +1,7 @@
 from fastai2.basics import *
 # import pickle
 
-Wave = { 'L': 'Loading', 'W': 'Wave', 'U': 'Undefined', 'MB': 'MiniBoss', 'B': 'Boss' }
+Wave = { 'L': 'Loading', 'W': 'Wave', 'U': 'Undefined', 'MB': 'MiniBoss', 'B': 'Boss', 'R': 'Reward', 'LT': 'Loot', 'RL': 'Replay' }
 State = { 'O': 'Ongoing', 'V': 'Victory', 'L': 'Loose' }
 
 filename = 'data.csv'
@@ -36,6 +36,6 @@ def read(filename):
 
 data = []
 for image in imagestemp:
-	data.append({'Name': image.name, 'Run': 'Cairos', 'Wave': 'MB', 'State': 'O', 'Button': 'False' })
+	data.append({'Name': image.name, 'Run': 'Cairos', 'Wave': 'RL', 'State': 'V', 'Button': '489/306/102/515' })
 
 write(filename, fieldnames, data)
