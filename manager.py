@@ -36,6 +36,6 @@ def read(filename):
 
 data = []
 for image in imagestemp:
-	data.append({'Name': image.name, 'Run': 'Cairos', 'Wave': 'B', 'State': 'O', 'Button': 'False' })
+	data.append({'Name': image.name, 'Run': 'Cairos', 'Wave': 'MB', 'State': 'O', 'Button': 'False' })
 
 write(filename, fieldnames, data)
